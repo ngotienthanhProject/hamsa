@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* @font-face {
+    src: url(fonts/GothamBold.ttf);
+    font-family: Gotham;
+} */
+html{
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+    /* font-family: Gotham; */
+}
+
+body{
+    font-size: 1.8rem;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.header{
+    display: flex;
+    text-transform: uppercase;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right ,rgba(233, 227, 227, 0.281), rgba(0, 0, 0, 0.007)), url('../images/banner.png');
+    padding: 3rem;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header h1{
+    font-size: 7.2rem;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 1rem;
+    transform: unset;
+}
+   
+.header nav ul{
+    list-style: none;
+}
+
+.header nav ul li {
+    font-size: 1.6rem;
+    margin: 3rem 0;
+    letter-spacing: .5rem;
+    font-weight: 500;
+}
+
+.banner{
+    display: flex;
+    width: 100%;
+    height: 54vh;
+}
+
+.banner div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner-left, .banner-right{
+    position: relative;
+    flex: 0 0 50%;
+    background-color: cornflowerblue;
+}
+
+.banner .text{
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.banner .text h2{
+    font-size: 1.7rem;
+}
+
+div p {
+    text-transform: uppercase;
+    word-spacing: 1rem;
+    letter-spacing: .2rem;
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 2rem 0;
+    font-weight: 500;
+}
+
+.list-img{
+    display: flex;
+}
+
+.list-img div{
+    flex: 0 0 20%;
+}
+.list-img div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+footer ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+footer ul li{
+    font-size: 1.2rem;
+    padding: 0 3rem;
+}
+footer ul li:not(:last-child){
+    
+    border-right: 1px solid black;
+}
+
+.subscribe{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+    align-items: baseline;
+}
+
+.subscribe-left{
+    flex: 1;
+    margin-left: 5rem;
+}
+.subscribe-left p {
+    text-align: start;
+    font-weight: 800;
+    word-spacing: normal;
+}
+
+.subscribe-left input{
+    /* height: 100%; */
+    padding: .6rem 0;
+    width: 30%;
+
+}
+
+.subscribe-left button{
+    background-color: black;
+    color: white;
+    padding: .8rem;
+    outline: none;
+    border: none;
+}
+.subscribe-right{
+    margin-right: 5rem;
+}
+.subscribe-right ul {
+    list-style: none;
+}
+.subscribe-right ul li:first-child{
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.subscribe-right ul li{
+    font-size: 1.6rem;
+
+}
+.icons i{
+    margin-top: 2rem;
+    margin-right: 1rem;
+}
